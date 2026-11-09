@@ -23,7 +23,12 @@ jobs:
           distribution: temurin
           java-version: 21
 
-      - uses: android-actions/setup-android@v3
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: 웹 파일·글꼴을 안드로이드 프로젝트로 복사
 
       - name: 웹 파일·글꼴을 안드로이드 프로젝트로 복사
         working-directory: app
